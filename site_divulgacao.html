@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Chance - Jogue Agora!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f1015;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #a0a0b0;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 900px;
+            width: 100%;
+            gap: 25px;
+        }
+
+        /* Card de Destaque do Jogo */
+        .game-card {
+            background: #1a1c23;
+            border: 2px solid #ffcc00;
+            border-radius: 16px;
+            padding: 30px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        .game-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .game-description {
+            color: #cccccc;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn-play {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffcc00, #ff8800);
+            color: #000;
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+        }
+
+        .btn-play:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
+        }
+
+        /* Banner de Anúncio */
+        .ad-banner {
+            width: 100%;
+            background: #15171e;
+            border: 2px dashed #44475a;
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ad-badge {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: #ff3333;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .ad-image {
+            width: 120px;
+            height: 90px;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+            flex-shrink: 0;
+        }
+
+        .ad-image span {
+            font-size: 1.4rem;
+            margin-top: 4px;
+        }
+
+        .ad-content {
+            flex-grow: 1;
+        }
+
+        .ad-content h3 {
+            color: #00d2ff;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .ad-content p {
+            color: #aaaaaa;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .ad-btn {
+            display: inline-block;
+            background: #00d2ff;
+            color: #000;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Central de Jogos</h1>
+        <p>Descubra e jogue os melhores projetos independentes!</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Bloco Principal do Seu Jogo -->
+        <div class="game-card">
+            <h2 class="game-title">🎮 Super Chance</h2>
+            <p class="game-description">
+                Prepare-se para testar a sua sorte e habilidade! O <strong>Super Chance</strong> é um jogo incrível criado diretamente para rodar no seu navegador.
+            </p>
+            <!-- O botão abre o seu arquivo local do jogo -->
+            <a href="file:///C:/Users/ssbsb/Downloads/super_chance.html" class="btn-play" target="_blank">
+                JOGAR AGORA!
+            </a>
+        </div>
+
+        <!-- Banner de Anúncio Fictício -->
+        <div class="ad-banner">
+            <span class="ad-badge">ANÚNCIO</span>
+            <div class="ad-image">
+                SUBWAY
+                <span>🏃‍♂️💨</span>
+                MOD APK
+            </div>
+            <div class="ad-content">
+                <h3>Subway Surfers - Mod Coins Infinitos</h3>
+                <p>Baixe agora a versão modificada com chaves infinitas, pranchas liberadas e muito mais!</p>
+                <a href="#" class="ad-btn" onclick="alert('Anúncio demonstrativo!'); return false;">Baixar APK Mod</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Criado e hospedado localmente.</p>
+    </footer>
+
+</body>
+</html>
